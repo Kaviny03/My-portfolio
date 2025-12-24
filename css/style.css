@@ -1,0 +1,103 @@
+*{
+    font-family: monospace;
+}
+
+body{
+    margin: 0;
+    color: black; /* Set a default text color for the body */
+    font-size: 15px;
+    background-color: #f0f0f0; /* Slight background color for contrast */
+}
+
+header{
+    /* FIX: Removed height: 100vh; so the header only takes up necessary space */
+    color: white;
+    background-color: blue;
+    padding: 20px; /* Added padding to the header */
+}
+
+/* Ensure h1 in the header is white */
+header h1{
+    color: white;
+    margin: 0;
+    font-size: 50px;
+}
+
+/* Ensure h1 in the main content is blue */
+main h1{
+    font-size: 50px;
+    color: blue;
+}
+
+.button{
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: darkblue;
+}
+
+/* NOTE: The 'image' selector in your original CSS is invalid (should be img) */
+/* image{
+    height: 200px;
+} */
+
+main{
+    padding:20px;
+}
+section{
+    height: 100vh;
+    /* FIX: Added background and color for proper contrast */
+    background-color: white; 
+    color: black; 
+    border:1px solid grey;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 40px; /* Increased padding inside sections */
+}
+
+/* Adjusted submit button styling */
+.submit{
+    height: 40px;
+    width: 140px; /* FIX: Added 'px' to make it a valid size */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+.submit:hover{
+    /* FIX: Changed invalid color to a valid color for hover state */
+    background-color: darkgreen; 
+}
+/* NOTE: The '.input' selector in your original CSS does not match your form elements */
+/* .input{
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    height: 25px;
+} */
+
+.fixedbutton{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+footer{
+    height: 124px;
+    background-color: black;
+    color: lightgrey;
+    text-align: center;
+    padding-top: 20px;
+}
