@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0b0f1a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+nav {
+    background: rgba(11, 15, 26, 0.95);
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: #94a3b8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #38bdf8; }
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: radial-gradient(circle at top right, #1e3a8a 0%, #0b0f1a 80%);
+}
+
+.hero h1 { 
+    font-size: clamp(2.5rem, 8vw, 4rem); 
+    margin: 0; 
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 { color: #94a3b8; font-weight: 400; margin-top: 10px; }
+
+.btn {
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-linkedin { background: #0077b5; color: white; }
+.btn-github { background: #1e293b; color: white; border: 1px solid #334155; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
+
+.container { width: 90%; max-width: 1100px; margin: auto; padding: 50px 0; }
+
+.card {
+    background: #111827;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+}
+
+.card h2 { 
+    color: #38bdf8; 
+    border-left: 4px solid #38bdf8; 
+    padding-left: 15px; 
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.skill-item:hover { border-color: #38bdf8; }
+
+.skill-item b { color: #38bdf8; display: block; margin-bottom: 12px; font-size: 1rem; text-transform: uppercase; }
+
+.skill-item p { 
+    font-family: 'Fira Code', monospace; 
+    font-size: 0.9rem; 
+    color: #cbd5e1; 
+    margin: 0;
+    line-height: 2.2; /* Spacing added for clean look */
+}
+
+.project-box {
+    background: #0f172a;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+}
+
+.project-box h3 { color: #f1f5f9; margin-top: 0; font-size: 1.3rem; }
+.project-box p { color: #94a3b8; font-size: 0.95rem; }
+
+.contact-info p { margin: 15px 0; font-size: 1.1rem; }
+.contact-info a { color: #38bdf8; text-decoration: none; }
+
+footer { text-align: center; padding: 40px; color: #475569; border-top: 1px solid #1e293b; }
+
+@media (max-width: 768px) {
+    .card { padding: 25px; }
+    .hero h1 { font-size: 2.8rem; }
+}
